@@ -1,0 +1,10 @@
+/* 小于1160的 */
+@media screen and (max-width: 1160px) {
+  .page-content {
+    padding-right: 40px;
+  }
+
+  .page-anchor {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,232 @@
+.page-app {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  /* max-width: 1160px; */
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.crheader {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #f7f7fa;
+  z-index: 1000;
+
+  &-container {
+    padding-left: 260px;
+    padding-right: 140px;
+    box-sizing: border-box;
+  }
+
+  &-content {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+  }
+
+  .search-panel {
+    display: inline-block;
+    margin-top: 12px;
+    width: 200px;
+    transition: width 0.3s ease;
+    &:focus-within {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &-login {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 34px;
+    background: transparent;
+    border: 1px solid #099dfd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #099dfd;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    /* border: none; */
+    outline: none;
+    appearance: none;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #191919;
+    display: none;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
+  position: fixed;
+  top: 60px;
+  z-index: 999;
+
+  &-item {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #586376;
+    line-height: 64px;
+    outline: none;
+
+    & + .nav-item {
+      margin-left: 60px;
+    }
+    &.active,
+    &.nuxt-link-active {
+      box-sizing: border-box;
+      border-bottom: 4px solid #099dfd;
+    }
+
+    &:hover {
+      color: #099dfd;
+    }
+  }
+}
+/* 输出PDF时不要头部 */
+.isOutputPdf {
+  .header-container {
+    display: none;
+  }
+
+  .page-container {
+    padding-top: 0 !important;
+  }
+
+  .page-slidebar {
+    padding-top: 90px;
+  }
+
+  .switch-platform {
+    top: 0;
+  }
+}
+.page-container {
+  position: relative;
+  /* width: 1160px; */
+  /* max-width: 1160px; */
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 124px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.page-content {
+  padding-left: 260px;
+  padding-right: 210px;
+  padding-bottom: 80px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.page-slidebar {
+  position: fixed;
+  /* left: 0; */
+  top: 0;
+  /* padding-top: 124px; */
+  padding-top: 214px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  width: 230px;
+  height: 100%;
+
+  .slidebar {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.page-anchor {
+  position: fixed;
+  /* right: 0; */
+  /* right: calc((100vw - 1160px) / 2); */
+  right: calc((100vw - 1300px) / 2);
+  top: 0;
+  padding-top: 124px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  width: 180px;
+  /* height: auto;
+  min-height: 100%; */
+  height: 100%;
+  /* background-color: rgba(255, 0, 0, 0.3); */
+
+  .anchorbar {
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.switch-platform {
+  position: absolute;
+  top: 124px;
+  width: 210px;
+  height: 40px;
+  margin-top: 30px;
+  /* margin-bottom: 40px; */
+  background: #fff;
+  box-shadow: 0 3px 4px 0 rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  /* border: 1px solid #e3e3ec; */
+  cursor: pointer;
+
+  .el-select {
+    width: 100%;
+  }
+
+  .switch-platform-plat-icon {
+    height: 40px;
+  }
+
+  .el-input__inner {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+  }
+
+  .el-input.el-input--prefix {
+    .el-input__inner {
+      padding-left: 35px;
+    }
+  }
+}
+
+.cr-platformor-framework-select {
+  .el-select-dropdown__wrap {
+    max-height: 478px;
+  }
+}

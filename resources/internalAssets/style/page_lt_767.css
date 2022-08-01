@@ -1,0 +1,81 @@
+/* 小于767的 */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+    padding: 0 20px;
+  }
+
+  .crheader {
+    .logo {
+      left: 20px;
+    }
+
+    &-menu {
+      right: 20px;
+    }
+  }
+
+  .page-slidebar {
+    background: #fff;
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 15%);
+  }
+
+  .page-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav {
+    &-items {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      background: #fff;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
+      z-index: 99;
+    }
+
+    &-item {
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      border-top: 1px solid #dfdfe5;
+      padding: 0 20px;
+      color: #586376;
+      background: #fff;
+
+      & + .nav-item {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        border-color: #dfdfe5 !important;
+      }
+      &.active,
+      &.nuxt-link-active {
+        border-bottom: none;
+        /* border-bottom: 1px solid transparent; */
+        border-top: 1px solid #dfdfe5;
+      }
+
+      &:hover {
+        color: #586376;
+      }
+    }
+
+    &-mcontent {
+      padding: 14px 20px 14px 60px;
+      box-sizing: border-box;
+    }
+
+    &-menu {
+      position: absolute;
+      left: 20px;
+      top: 18px;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "egg_nuxt",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "await-stream-ready": "^1.0.1",
+    "cheerio": "^1.0.0-rc.5",
+    "copyfiles": "^2.4.1",
+    "core-js": "^3.8.3",
+    "egg": "^2.15.1",
+    "egg-jwt": "^3.1.7",
+    "egg-mongoose": "^3.3.1",
+    "egg-scripts": "^2.11.0",
+    "egg-validate": "^2.0.2",
+    "element-ui": "^2.15.0",
+    "gift": "^0.10.2",
+    "gray-matter": "^4.0.2",
+    "handlebars": "^4.7.7",
+    "highlight.js": "^10.7.1",
+    "koa-multer": "^1.0.2",
+    "markdown-it": "^12.0.4",
+    "markdown-it-attrs": "^4.0.0",
+    "markdown-it-container": "^3.0.0",
+    "memory-cache": "^0.2.0",
+    "node-wkhtmltopdf": "^2.0.0",
+    "nuxt": "^2.14.12",
+    "prismjs": "^1.23.0",
+    "rimraf": "^3.0.2",
+    "svn-spawn": "^0.1.6",
+    "uuid": "^8.3.2",
+    "vuedraggable": "^2.24.3",
+    "wkhtmltopdf": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-eslint": "^10.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^7.18.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "nodemon": "^2.0.7",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-url": "^8.0.0",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "eggScriptsConfig": {
+    "title": "crdoc",
+    "port": 7001,
+    "daemon": true,
+    "workers": 1,
+    "ignore-stderr": true
+  },
+  "scripts": {
+    "start": "egg-scripts start",
+    "stop": "egg-scripts stop",
+    "serve": "egg-bin dev",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
